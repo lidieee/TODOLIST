@@ -1,0 +1,17 @@
+.container {
+    border: 0 none;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.container .title{
+  font-weight: bold;
+}
+
+.container .name{
+  font-size: 15px;
+}

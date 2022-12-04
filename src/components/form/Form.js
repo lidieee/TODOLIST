@@ -14,14 +14,14 @@ function Form({ setTodos, todos }) {
 
   const [todo, setTodo] = useState(initialState);
   const onChangeHandler = (event) => {
-    const { name, value } = event.target;
-    setTodo({ ...todo, [name]: value });
+    const {name, value} = event.target;
+    setTodo({...todo, [name]: value});
   };
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
     if (todo.title.trim() === "" || todo.body.trim() === "") return;
-    setTodos([...todos, { ...todo, id: number }]);
+    setTodos([...todos, {...todo, id: number}]);
     setTodo(initialState);
     number++;
   };
